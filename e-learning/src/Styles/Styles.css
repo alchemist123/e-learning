@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300');
+
+
+
+body
+{
+    overflow-x:hidden;
+    background-color: #eff3f8;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.elearn-heading
+{
+    font-family: 'Raleway', sans-serif;
+}
+.model-content
+{
+    z-index: 9999;
+}
+.bodyClass
+{
+    text-align: center;
+    color: #111010;
+    
+}
+.LoginContainer
+{
+   text-align: center;
+}
+.InputBox-1
+{
+    text-align: center;
+    margin-top:9vh;
+    width: 18vw;
+    height: 4vh;
+    border-radius: 0.5vh;
+    border : none;
+    background-color: #e4e9f0;
+}
+.InputBox-2
+{
+    text-align: center;
+    margin-top : 2vh;
+    width: 18vw;
+    height: 4vh;
+    border-radius: 0.5vh;
+    background-color: #e4e9f0;
+    border : none;
+}
+.LoginButton
+{
+    margin-top:5vh;
+    width: 10vw;
+    background-color: #0a0a0a;
+    color : white;
+    border : none;
+    border-radius: 0.6vh;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    font-family: 'Montserrat', sans-serif;
+    height: 4vh;
+    font-weight: bold;
+}
+.LoginBox
+{
+    text-align: center;
+    background-color:#ffffff;
+    margin : auto;
+    max-width : 25vw;
+    height: 55vh;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    border-radius: 0.3vh;
+}
+.container-fluid
+{
+    padding : 0;
+}
+.LoginBox a 
+{
+    color : #0a090a;
+}
+.LoginBox p
+{
+    color : #050505;
+}
+.LoginBox h6
+{
+    color : #050505;
+}
+.label{
+    color:#e00022;
+}
+
+
+.floating-button:focus
+{
+    outline: none;
+}
+.floating-button:hover
+{
+    background-color: rgb(10, 9, 9);
+    color : white;
+    transition-duration: 0.2s;
+}

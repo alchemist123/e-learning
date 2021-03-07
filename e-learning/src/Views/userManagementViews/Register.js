@@ -6,17 +6,21 @@ import green_tick from '../../Assets/green-tick.png'
 import red_cross from '../../Assets/red-cross.png'
 import Axios from 'axios'
 function Register() {
+
     const [Email,setEmail]=useState('')
     const [userName,setUserName]=useState('')
     const [password,setPassword]=useState('')
     const [conPassword,setConPassword]=useState('')
     const [url,setUrl]=useState('')
     const [opacity,setOpacity]=useState(0)
+    const [type,setType]=useState('')
+
     const registerData =()=>{
         Axios.post('http://localhost:3001/api/insert',{email:Email,username:userName,password:password}).then(()=>{
             alert("sucessfull insert")
         })
     }
+    
     return (
         <div className="bodyClass">
              <b><h1 className="elearn-heading">E-Learning</h1></b>
@@ -43,7 +47,9 @@ function Register() {
                             }
                             }} /><img style={ {opacity : opacity, position : 'absolute', marginTop:'2.5vh', marginLeft:'1vw'} } src={url} height='20' width='20' /><br/>
                             <label style={{fontSize:"13px"}}>Account Type:</label>&nbsp;&nbsp;
-                            <select id="account" name="account" >
+                            <select id="account" name="account" onChange={event=>{
+                                setType(event.target.value)
+                            }} >
                             <option value="Student">Student</option>
                             <option value="Teacher">Teacher</option>
                             </select><br/>
